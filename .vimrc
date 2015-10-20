@@ -18,14 +18,17 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'L9'
 " Git plugin not hosted on GitHub
 Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-Plugin 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Avoid a name conflict with L9
 Plugin 'user/L9', {'name': 'newL9'}
 Plugin 'scrooloose/nerdtree'
+Plugin 'gilgigilgil/anderson.vim'
+Plugin 'elzr/vim-json'
+" git diff plugin
+Bundle 'jistr/vim-nerdtree-tabs'
+Plugin 'airblade/vim-gitgutter'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -42,7 +45,9 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 "let g:hybrid_use_Xresources = 1
 
-colorscheme sundeep_vim
+set t_Co=256
+colorscheme vim-dimmed
+syntax on
 set wildmenu
 set nu
 autocmd VimEnter * NERDTree
@@ -56,4 +61,5 @@ nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-j> :wincmd j<CR>                                                                                         
 nmap <silent> <c-h> :wincmd h<CR>                                                                                         
 nmap <silent> <c-l> :wincmd l<CR>
+set hlsearch
 "colorscheme hybrid
