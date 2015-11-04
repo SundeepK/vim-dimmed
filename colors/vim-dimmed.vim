@@ -28,7 +28,8 @@ hi Normal guifg=#7a7a7a guibg=#212121 guisp=#212121 gui=NONE ctermfg=243 ctermbg
 "hi LocalVariable -- no settings --
 "hi CTagsClass -- no settings --
 "hi clear -- no settings --
-hi IncSearch guifg=#192224 guibg=#BD9800 guisp=#BD9800 gui=NONE ctermfg=235 ctermbg=1 cterm=NONE
+hi MatchParen cterm=bold gui=bold  guisp=#BD9800 gui=NONE ctermfg=96 ctermbg=234  cterm=NONE
+hi IncSearch guifg=#192224 guibg=#BD9800 guisp=#BD9800 gui=NONE ctermfg=235 ctermbg=179 cterm=NONE
 hi WildMenu guifg=NONE guibg=#A1A6A8 guisp=#A1A6A8 gui=NONE ctermfg=NONE ctermbg=248 cterm=NONE
 hi SignColumn guifg=#192224 guibg=#536991 guisp=#536991 gui=NONE ctermfg=235 ctermbg=60 cterm=NONE
 hi SpecialComment guifg=#BD9800 guibg=NONE guisp=NONE gui=NONE ctermfg=243 ctermbg=NONE cterm=NONE
@@ -53,7 +54,7 @@ hi LineNr guifg=#BD9800 guibg=NONE guisp=NONE gui=NONE ctermfg=243 ctermbg=NONE 
 hi StatusLine guifg=#192224 guibg=#BD9800 guisp=#BD9800 gui=bold ctermfg=237 ctermbg=66 cterm=bold
 hi Label guifg=#BD9800 guibg=NONE guisp=NONE gui=bold ctermfg=243 ctermbg=NONE cterm=bold
 hi PMenuSel guifg=#192224 guibg=#BD9800 guisp=#BD9800 gui=NONE ctermfg=235 ctermbg=1 cterm=NONE
-hi Search guifg=#192224 guibg=#BD9800 guisp=#BD9800 gui=NONE ctermfg=235 ctermbg=1 cterm=NONE
+hi Search guifg=#192224 guibg=#BD9800 guisp=#BD9800 gui=NONE ctermfg=235 ctermbg=151 cterm=NONE
 hi Delimiter guifg=#BD9800 guibg=NONE guisp=NONE gui=NONE ctermfg=95 ctermbg=NONE cterm=NONE
 hi SpellRare guifg=#F9F9FF guibg=#192224 guisp=#192224 gui=underline ctermfg=189 ctermbg=235 cterm=underline
 hi Comment guifg=#5E6C70 guibg=NONE guisp=NONE gui=italic ctermfg=66 ctermbg=NONE cterm=NONE
@@ -90,7 +91,6 @@ hi Constant guifg=#804160 guibg=NONE guisp=NONE gui=NONE ctermfg=95 ctermbg=NONE
 hi Tag guifg=#BD9800 guibg=NONE guisp=NONE gui=NONE ctermfg=1 ctermbg=NONE cterm=NONE
 hi String guifg=#4e5739 guibg=NONE guisp=NONE gui=NONE ctermfg=101 ctermbg=NONE cterm=NONE
 hi PMenuThumb guifg=NONE guibg=#a4a6a8 guisp=#a4a6a8 gui=NONE ctermfg=NONE ctermbg=248 cterm=NONE
-hi MatchParen guifg=#BD9800 guibg=NONE guisp=NONE gui=bold ctermfg=94 ctermbg=NONE cterm=bold
 hi Repeat guifg=#BD9800 guibg=NONE guisp=NONE gui=bold ctermfg=131 ctermbg=NONE cterm=bold
 hi SpellBad guifg=#F9F9FF guibg=#192224 guisp=#192224 gui=underline ctermfg=189 ctermbg=235 cterm=underline
 hi Directory guifg=#536991 guibg=NONE guisp=NONE gui=bold ctermfg=60 ctermbg=NONE cterm=bold

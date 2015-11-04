@@ -26,6 +26,8 @@ Plugin 'user/L9', {'name': 'newL9'}
 Plugin 'scrooloose/nerdtree'
 Plugin 'gilgigilgil/anderson.vim'
 Plugin 'elzr/vim-json'
+Plugin 'ervandew/supertab'
+
 " git diff plugin
 Bundle 'jistr/vim-nerdtree-tabs'
 Plugin 'airblade/vim-gitgutter'
@@ -64,3 +66,11 @@ nmap <silent> <c-l> :wincmd l<CR>
 set hlsearch
 set shiftwidth=3 
 "colorscheme hybrid
+
+set ignorecase
+set smartcase
+
+let g:EclimJavaSearchSingleResult = 'tabedit'
+map f :JavaSearch <CR>
+autocmd CursorMoved * exe printf('match MatchParen /\V\<%s\>/', escape(expand('<cword>'), '/\'))
+
